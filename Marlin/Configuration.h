@@ -604,9 +604,9 @@
     #define DEFAULT_Ki_LIST {   1.50,   1.50 }
     #define DEFAULT_Kd_LIST {  69.26,  69.26 }
   #else
-    #define DEFAULT_Kp  20.37
-    #define DEFAULT_Ki   1.50
-    #define DEFAULT_Kd  69.26
+    #define DEFAULT_Kp  43.58
+    #define DEFAULT_Ki   6.82
+    #define DEFAULT_Kd  69.61
   #endif
 #endif // PIDTEMP
 
@@ -645,9 +645,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 128.82
-  #define DEFAULT_bedKi 16.91
-  #define DEFAULT_bedKd 245.36
+  #define DEFAULT_bedKp 71.9
+  #define DEFAULT_bedKi 12.72
+  #define DEFAULT_bedKd 270.86
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1382,7 +1382,7 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 310
+#define X_BED_SIZE 300
 #define Y_BED_SIZE 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
